@@ -1,0 +1,36 @@
+{
+  "name": "@openforge/lazy-img",
+  "version": "1.0.0",
+  "description": "Web Component built with Stencil to lazy load images",
+  "main": "dist/collection/index.js",
+  "types": "dist/collection/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "browser": "dist/lazyimg.js",
+  "scripts": {
+    "build": "stencil build",
+    "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
+    "serve": "stencil-dev-server",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@stencil/sass": "0.0.3",
+    "@stencil/core": "^0.10.0"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/utils": "latest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openforge/web-components.git"
+  },
+  "author": "OpenForge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openforge/web-components/lazy-img"
+  },
+  "homepage": "https://github.com/openforge/web-components/lazy-img"
+}
